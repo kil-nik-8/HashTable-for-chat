@@ -19,4 +19,13 @@
         - int find(Login login); – поиск по логину
         - void print(); – вывод ХТ на экран консоли
 
-+ class Pair содержит
++ struct Pair содержит
+    * Поля:
+        - Login _login; – логин пользователя
+        - int _hash; – хеш от пароля
+        - enPairStatus status; – статус ячейки
+
++ enum enPairStatus содержит:
+    * free; – ячейка свободна
+    * engaged; – ячейка занята
+    * deleted. – ячейка была удалена
